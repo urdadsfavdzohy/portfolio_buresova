@@ -6,8 +6,27 @@ body{
 }
 .content{
     flex: 1;
-    background-color: aqua;
+    position: fixed;
+    bottom: 50%;
+    
+    background-color: rgb(255, 255, 255);
 }
 footer{
     color: black;
+    background-color: rgb(195, 154, 233);
+    position: fixed; 
+    bottom: 5%;
+    right: 0%;
+    width: 100%;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    padding: 20;
+}
+
+.row::after{
+    display: table;
+    clear: both;
 }
